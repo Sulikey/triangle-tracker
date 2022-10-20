@@ -8,7 +8,7 @@ function iso(side1, side2, side3) {
 }
 
 function sca(side1, side2, side3) {
-    return (side1 + side2 === side3 || side1 + side3 === side2 || side2 + side3 === side1);
+    return (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1);
 }
 
 function check(side1, side2, side3) {
